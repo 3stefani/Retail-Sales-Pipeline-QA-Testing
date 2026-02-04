@@ -1,0 +1,47 @@
+,,,
+TC-001 – Validación de columnas obligatorias,,,
+ID,Precondición,,Pasos
+1,Archivo CSV cargado,,1. Abrir el CSV.
+,,,"2. Comprobar que existen las columnas: Transaction ID, Date, Product Category, Quantity, Price per Unit. "
+,,,
+,,,
+,,,
+TC-002 – Campos obligatorios vacíos,,,
+ID,Precondición,,Pasos
+2,Algunas filas tienen campos obligatorios vacíos,,1. Revisar fila por fila los campos obligatorios.
+,,,2. Marcar las filas con campos vacíos.  
+,,,
+,,,
+,,,
+TC-003 – Validación de valores de Age,,,
+ID,Precondición,,Pasos
+3,Algunos campos en la columna Age están fuera del rango de edad humano o no son numéricos,,1. Revisar columna Age.
+,,,2. Detectar edades fuera de rango o no numéricas.
+,,,
+,,,
+,,,
+TC-004 – Validación de valores de Quantity,,,
+ID,Precondición,,Pasos
+4,Algunos campos en la columna Quantity contiene 0 o texto,,1. Revisar columna Quantity.
+,,,"2. Detectar valores no válidos como negativos, 0 o texto."
+,,,
+,,,
+,,,
+TC-005 – Validación de valores de Price per Unit,,,
+ID,Precondición,,Pasos
+5,Algunos campos en la columna Price per Unit contiene 0 o símbolo de €.,,1. Revisar columna Price per Unit.
+,,,"2. Detectar valores no válidos como negativos, 0, numéricos o símbolos."
+,,,
+,,,
+,,,
+TC-006 – Consistencia de Total Amount,,,
+ID,Precondición,,Pasos
+6,Algunas filas tienen el valor incorrecto en la columna Total Amount.,,1. Revisar que Total Amount = Quantity × Price per Unit.
+,,,
+,,,
+,,,
+,,,
+TC-007 – Formato de fecha,,,
+ID,Precondición,,Pasos
+7,Algunas fechas no son válidas porque contienen un formato incorrecto o están en formato de texto.,,1. Revisar columna Date.
+,,,"2. Detectar fechas inválidas, en formato de texto o mal formateadas."
